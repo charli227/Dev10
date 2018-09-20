@@ -2,105 +2,142 @@
 <!--
 Name: Charli Blank
 Date Created: 11 September, 2018
-Most Recent Revision: 14 September, 2018
+Most Recent Revision: 18 September, 2018
 -->
 <html lang="en">
 
-<head>
-  <title>Charli Blank's Portfolio</title>
-</head>
+  <head>
+    <title>Charli Blank's Portfolio</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
 
-<body>
+    <style>
+      caption {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 8px;
+      }
+      table, th, td {
+        border: 1px solid #0d1f2d;
+        border-collapse: collapse;
+        padding: 5px 10px;
+      }
+      table {
+        width: 90%;
+        margin: auto;
+      }
+      tr {
+        height: 30px;
+      }
+      th {
+        background-color: #546a7b;
+        color: #f2eded;
+      }
+      tbody tr:nth-child(odd){
+        background-color: #e4c3ad;
+      }
+      article img {
+        float:left;
+      }
+    </style>
+  </head>
 
-  <header>
-    <h1 id="top">Portfolio for Charli Blank</h1>
-  </header>
+  <body>
+    <main> <!-- The main element contains all blocks on the page -->
+      <header> <!-- The header element contains only the main title at this point -->
+        <h1>Portfolio for Charli Blank</h1>
+      </header>
 
-  <nav>
-    <hr />
-    <p><a href="projects.html">Projects</a></p>
-    <p><a href="contact.html">Contact</a></p>
-    <p><a href="testimonials.html">Testimonials</a></p>
-    <hr />
-  </nav>
+      <nav class="border"> <!-- The nav element will inclued navigation buttons or links -->
+        <p><a href="projects.html">Projects</a></p>
+        <p><a href="contact.html">Contact Me</a></p>
+        <p><a href="testimonials.html">Testimonials</a></p>
+        <div class="clear-float"></div>
+      </nav>
 
-  <section>
-    <article id="about">
-      <h2><em>About Me</em></h2>
-      <img src="images/me-216px.jpg" alt="Portrait of Charli Blank" />
-      <p>Sed nisi est, aliquam non gravida et, euismod id ex. <strong>Praesent molestie metus justo</strong>, non tristique nisl blandit id. Proin porta nisl eros, vitae laoreet eros vestibulum in. Integer faucibus malesuada purus quis consectetur.</p>
-      <p>Vivamus nec sollicitudin diam, <strong>at posuere augue</strong>. Nunc pulvinar imperdiet massa ut tincidunt. Pellentesque ac tincidunt metus, nec molestie magna.</p>
-    </article>
+      <section> <!-- The section element contains the three chunks used to sell Charli Blank in this page -->
+        <article class="border" id="about"> <!-- This is the first chunk inside the section element -->
+          <h2><em>About Me</em></h2>
+          <img src="images/me-216px.jpg" alt="Portrait of Charli Blank" width="250" style="padding-right: 10px;" />
+            <p>Sed nisi est, aliquam non gravida et, euismod id ex. <strong>Praesent molestie metus justo</strong>, non tristique nisl blandit id. Proin porta nisl eros, vitae laoreet eros vestibulum in. Integer faucibus malesuada purus quis consectetur.</p>
+            <p>Vivamus nec sollicitudin diam, <strong>at posuere augue</strong>. Nunc pulvinar imperdiet massa ut tincidunt. Pellentesque ac tincidunt metus, nec molestie magna.</p>
+          <div class="clear-float"></div>
+        </article>
 
-    <article id="experience">
-      <h2><em>Past Experiences</em></h2>
-      <img src="images/HSI-215px.jpg" alt="Cyber intern at HSI" />
-      <table>
-        <caption>Employment History</caption>
-        <tr>
-          <th>Years of Employment</th>
-          <th>Title</th>
-          <th>Company</th>
-        </tr>
-        <tr>
-          <td>2016-2018</td>
-          <td>Security Compliance Manager</td>
-          <td>Direct Marketing Solutions</td>
-        </tr>
-        <tr>
-          <td>2014-2016</td>
-          <td>Student</td>
-          <td>Utica College</td>
-        </tr>
-        <tr>
-          <td>2015</td>
-          <td>Cyber Intern</td>
-          <td>DHS/HSI</td>
-        </table>
-    </article>
+        <article id="experience"> <!-- This is the second chunk inside the section element -->
+          <h2><em>Past Experiences</em></h2>
+          <img src="images/HSI-215px.jpg" alt="Cyber intern at HSI" width="250" />
+          <div class="right-content">
+            <table>
+              <caption>Employment History</caption>
+              <thead>
+                <tr>
+                  <th>Years of Employment</th>
+                  <th>Title</th>
+                  <th>Company</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2016-2018</td>
+                  <td>Security Compliance Manager</td>
+                  <td>Direct Marketing Solutions</td>
+                </tr>
+                <tr>
+                  <td>2014-2016</td>
+                  <td>Student</td>
+                  <td>Utica College</td>
+                </tr>
+                <tr>
+                  <td>2015</td>
+                  <td>Cyber Intern</td>
+                  <td>DHS/HSI</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="clear-float"></div>
+        </article>
 
-    <article id="hobbies">
-      <h2><em>Hobbies</em></h2>
-      <img src="images/hobbies-216px.jpg" alt="Favorite outdoor activities" />
-      <ul>
-        <li>Authors</li>
-        <ol>
-          <li>Fredrik Backman</li>
-          <li>Jo Nesbo</li>
-          <li>Amy Tan</li>
-        </ol>
-        <li>Movies</li>
-        <ol>
-          <li>Million Dollar Baby</li>
-          <li>Silver Linings Playbook</li>
-          <li>Along Came Polly</li>
-        </ol>
-      </ul>
-      <ul>
-        <li>Sports</li>
-        <ul>
-          <li>Swimming</li>
-          <li>Water Polo</li>
-          <li>Football</li>
-        </ul>
-        <li>Outdoor Activities</li>
-        <ul>
-          <li>Camping</li>
-          <li>Hiking</li>
-          <li>Kayaking</li>
-        </ul>
-      </ul>
-    </article>
+        <article id="hobbies"> <-- This is the third chunk inside the section element -->
+          <h2><em>Hobbies</em></h2>
+          <img src="images/hobbies-216px.jpg" alt="Favorite outdoor activities" width="250" />
+          <div class="right-content">
+            <ul>
+              <li>Authors</li>
+              <ol>
+                <li>Fredrik Backman</li>
+                <li>Jo Nesbo</li>
+                <li>Amy Tan</li>
+              </ol>
+              <li>Movies</li>
+              <ol>
+                <li>Million Dollar Baby</li>
+                <li>Silver Linings Playbook</li>
+                <li>Along Came Polly</li>
+              </ol>
+            </div>
+            <div class="right-content">
+              <li>Sports</li>
+              <ul>
+                <li>Swimming</li>
+                <li>Water Polo</li>
+                <li>Football</li>
+              </ul>
+              <li>Outdoor Activities</li>
+              <ul>
+                <li>Camping</li>
+                <li>Hiking</li>
+                <li>Kayaking</li>
+              </ul>
+            </ul>
+          </div>
+          <div class="clear-float"></div>
+        </article>
+      </section>
 
-    <p><a href="#top">Return to top</a></p>
-
-  </section>
-
-  <footer>
-    <hr />
-    <p>&copy; 2020 Charli Blank. All rights reserved.</p>
-  </footer>
-
-</body>
-
+      <footer>
+        <p>&copy; 2020 Charli Blank. All rights reserved.</p>
+      </footer>
+    </main>
+  </body>
 </html>

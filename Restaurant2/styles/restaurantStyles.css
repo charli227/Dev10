@@ -1,0 +1,41 @@
+/*
+Creator: Charli Blank
+Date Created: 19 September, 2018
+Date Last Revised: 20 September, 2018
+*/
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #c6bcb6;
+  color: #625750
+}
+
+header, footer {
+  background-color: #96897f;
+  color: #625750;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 5em;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav a:link {
+  color: #625750;
+}
+
+nav a:visited {
+  color: green;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+nav a:active {
+  text-decoration: none;
+}
